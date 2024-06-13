@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <ul>
+        <li><img src="assets/img/brandred.png" /></li>
+        <li class="collapse"><a href="index.html">Home</a></li>
+        <li class="collapse"><a href="myproject.html">My Project</a></li>
+        <li class="collapse"><a href="Testimonial.html">Testimonial</a></li>
+      </ul>
+      <div class="navright collapse">
+        <a href="Contact.html">Contact Me</a>
+      </div>
+      <div class="navright" id="hamburger-btn">
+        <button onclick="openHamburger()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="hamburger-container" id="hamburger-container">
+      <a href="index.html">Home</a>
+      <a href="myproject.html" class="nav-active">My Project</a>
+      <a href="Contact.html">Contact Me</a>
+    </div>
+    <!-- Body -->
+    <div>
+      <div>
+        <div class="contact-border">
+          <h1 class="header1">GET IN TOUCH</h1>
+          <form class="form-style">
+            <label for="name">Name</label>
+            <input type="text" id="inputName" />
+
+            <label for="email">Email</label>
+            <input type="email" id="inputEmail" />
+
+            <label for="telephone">Phone</label>
+            <input type="tel" id="inputPhone" />
+
+            <label for="subject">Subject</label>
+            <select id="inputSubject">
+              <option></option>
+              <option>Blogger</option>
+              <option>Guest</option>
+              <option>Promotion</option>
+            </select>
+
+            <label for="message">Your Message</label>
+            <textarea id="inputText"></textarea>
+
+            <button type="submit" onclick="submitData(event)">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/nav.js"></script>
+  </body>
+</html>
